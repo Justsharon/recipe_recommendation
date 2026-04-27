@@ -1,0 +1,10 @@
+previews:
+  generation: automatic
+
+services:
+  - type: web
+    name: recipe_recommendation
+    repo: https://github.com/Justsharon/recipe_recommendation
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run recipe_app.py --server.port 10000 --server.address 0.0.0.0
